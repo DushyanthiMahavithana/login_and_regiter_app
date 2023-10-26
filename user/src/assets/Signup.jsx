@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Signup() {
     return (
@@ -21,9 +22,9 @@ function Signup() {
                     <button type="submit" className="btn btn-primary btn-block">
                         Register
                     </button>
-                    <p style={{ textAlign: "center" }}>Already Have an Account?</p>
-                    <button className="btn btn-secondary btn-block">Login</button>
                 </form>
+                <p style={{ textAlign: "center" }}>Already Have an Account?</p>
+                    <Link to="/login" className="btn btn-secondary btn-block">Login</Link>
             </div>
         </div>
     );
